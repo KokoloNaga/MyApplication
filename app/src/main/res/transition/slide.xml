@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--interpolator：插值器，用于控制滑动深度  slideEdge：代表滑动方向-->
+<slide xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/decelerate_cubic"
+    android:duration="1000"
+    android:slideEdge="end">
+    <targets>
+        <!--排除状态栏-->
+        <target android:excludeId="@android:id/statusBarBackground"/>
+    </targets>
+</slide>

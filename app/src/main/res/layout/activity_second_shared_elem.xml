@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SecondSharedElemActivity"
+    android:padding="10dp">
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭当前界面"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:id="@+id/ll_root">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#ffff00"
+            android:transitionName="share_one"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#ff00ff"
+            android:text="点击我"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:transitionName="share_two"/>
+
+    </LinearLayout>
+</RelativeLayout>

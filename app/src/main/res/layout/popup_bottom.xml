@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_camera_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:text="拍照"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btn_camera_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff"
+        android:layout_marginTop="10dp"
+        android:text="取消"
+        android:textSize="18sp"/>
+</LinearLayout>

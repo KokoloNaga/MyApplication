@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--针对大多数控件如ImageView，来设置选中和未选中状态-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@android:drawable/checkbox_on_background"/>
+    <item android:state_selected="false" android:drawable="@android:drawable/checkbox_off_background"/>
+</selector>

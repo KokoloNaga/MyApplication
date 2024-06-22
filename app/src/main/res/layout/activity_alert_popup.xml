@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".normalView.AlertPopupActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示dialog"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btn_show_popupwindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在当前位置下面弹出PopupWindow"/>
+    <Button
+        android:id="@+id/btn_bottom_popupwindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在当前位置上面弹出PopupWindow"/>
+    <Button
+        android:id="@+id/btn_my_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义Dialog"/>
+    <Button
+        android:id="@+id/btn_my_alertdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义AlertDialog（含button）"/>
+</LinearLayout>

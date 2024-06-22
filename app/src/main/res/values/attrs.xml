@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义View的自定义属性：sweepAngleAdd-->
+    <declare-styleable name="customStyleView">
+        <attr name="sweepAngleAdd" format="integer"/>
+    </declare-styleable>
+    <!--自定义ViewGroup的自定义Layout属性：layout_position-->
+    <declare-styleable name="CustomlayoutLP">
+        <attr name="layout_position">
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

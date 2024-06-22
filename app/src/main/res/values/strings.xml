@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="testing">在string.xml与Activity中展现数字：这是一个数——%1$d，这是两位数——%2$d，这是三位数——%3$s</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">CANCEL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

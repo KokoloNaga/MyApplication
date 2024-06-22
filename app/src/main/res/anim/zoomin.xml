@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator">
+    <!--duration：持续时长，fromXScale：起始X比例，fromYScale：起始Y比例，pivotX:缩放起始点X坐标，pivotY：缩放起始点Y坐标，toXScale：最终X尺寸，toYScale：最终Y尺寸-->
+    <scale
+        android:duration="5000"
+        android:fromXScale="2.0"
+        android:fromYScale="2.0"
+        android:pivotX="50%p"
+        android:pivotY="50%p"
+        android:toXScale="1.0"
+        android:toYScale="1.0"/>
+</set>

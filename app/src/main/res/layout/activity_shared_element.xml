@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SharedElementActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <View
+        android:id="@+id/view_share_one"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#ffff00"
+        android:transitionName="share_one"/>
+    <TextView
+        android:id="@+id/view_share_two"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#ff00ff"
+        android:text="点击我"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:transitionName="share_two"/>
+
+</LinearLayout>

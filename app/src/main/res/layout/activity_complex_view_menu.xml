@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recyclerView.ComplexViewMenuActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear_recyclerView Demo"/>
+    <Button
+        android:id="@+id/btn_recycler_grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grid_recyclerView Demo"/>
+    <Button
+        android:id="@+id/btn_recycler_staggered_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staggered_recyclerView Demo"/>
+    <Button
+        android:id="@+id/btn_recycler_headfootclick_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="headfootclick_recyclerView Demo"/>
+    <Button
+        android:id="@+id/btn_recycler_swipe_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swipe_recyclerView Demo"/>
+    <Button
+        android:id="@+id/btn_recycler_swipeMore_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swipe_recyclerView Demo"/>
+</LinearLayout>

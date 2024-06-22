@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".activity.FinishApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/concealTitle"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".version.EightActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- 设置分屏下的参数 -->
+        <activity
+            android:name=".version.SevenActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".version.SixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".version.FiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".version.VersionMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.GPSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.CopyPasteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.OpenExplorerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.VideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.EmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".moreApplication.MoreApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".web_data.FileStorageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".web_data.SqliteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".web_data.SharedPreferencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".web_data.OkhttpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".web_data.WebDataMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Thread.ThreadPoolExecutorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Thread.AsyncTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Thread.HandlerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Thread.ThreadUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Thread.ThreadMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.UnderGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.FragmentOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.FragmentMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contentProvider.ContentProviderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".broadcast_receiver.StaticBroadcastActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".broadcast_receiver.StaticBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.STATIC_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".broadcast_receiver.DynamicBroadcastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".broadcast_receiver.BroadcastReceiverMenuActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".service.LocalService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".service.ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.ServiceMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SecondSharedElemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SharedElementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AnimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ToastActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 自定义动作字符串 -->
+                <action android:name=".activity.ToastActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivityMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".normalView.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.SwipeRefreshMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.SwipeRefreshActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.RecyclerViewHeadFootClickActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.RecyclerStaggeredActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.RecyclerGridLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.ComplexViewMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.RecyclerLinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".normalView.AlertPopupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".normalView.ProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".normalView.RadioCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".normalView.TextViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".normalView.NormalMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewDemo.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewDemo.ViewGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewDemo.MyViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewDemo.ViewMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

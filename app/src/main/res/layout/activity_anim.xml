@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AnimActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_anim_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新页面从左切入"/>
+    <Button
+        android:id="@+id/btn_anim_interpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义缩放切出放大进入动画"/>
+    <Button
+        android:id="@+id/btn_explode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explode 效果"/>
+    <Button
+        android:id="@+id/btn_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide 效果"/>
+    <Button
+        android:id="@+id/btn_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fade 效果"/>
+</LinearLayout>
